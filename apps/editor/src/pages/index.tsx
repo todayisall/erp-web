@@ -1,6 +1,11 @@
-import { Framework as EditorFramework } from '@/components/framework'
-export default () => {
+import { Framework } from '../framework'
+
+export const Index = () => {
   return (
-    <EditorFramework enabled />
-  )
-}
+    <div style={{
+      height: '100vh'
+    }} >
+      <Framework/>
+    </div>
+  );
+};

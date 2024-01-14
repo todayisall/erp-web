@@ -1,18 +1,16 @@
-<!-- 项目logo -->
+# epr-web 
+一个低代码前端学习项目
 
-```shell
-# 拉取项目代码
-git clone https://github.com/Ignition-Space/Ignition-web.git
+## 项目介绍
 
-# 进入工程
-cd ./Ignition-web
+## 项目结构
 
-# 安装依赖, 必须使用pnpm
-pnpm install
+## 项目启动
+1. pnpm install
+2. pnpm run dev
 
-# 构建编辑器依赖
-pnpm run build:editor
+访问端口:
+ 主工程: http://localhost:10010/ 
+ 编辑器: http://localhost:5173/
 
-# 启动编辑器
-cd ./apps/editor && pnpm run start
-```
+ 

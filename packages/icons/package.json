@@ -1,0 +1,11 @@
+{
+  "name": "@erp/icons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "scripts": {
+    "start": "tsup",
+    "build": "tsup"
+  }
+}

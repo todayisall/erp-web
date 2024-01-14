@@ -1,22 +1,20 @@
 {
-  "name": "@lgnition-lowcode/setter",
+  "name": "@erp/setter",
   "version": "1.0.0",
-  "type": "module",
+  "description": "",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.umd.js",
-  "module": "./dist/index.es.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "types": "dist/index.d.mts",
   "scripts": {
-    "start": "vite build --watch",
-    "build": "vite build"
+    "start": "tsup",
+    "build": "tsup"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lgnition-lowcode/core": "workspace:^",
-    "re-resizable": "^6.9.9"
+    "@erp/core": "workspace:^"
   }
 }

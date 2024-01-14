@@ -1,21 +1,13 @@
 import { defineConfig } from 'tsup'
 
-export default defineConfig({
+
+export default defineConfig((options) => ({
+  minify: !options.watch,
   entry: ['src/index.ts'],
   splitting: false,
-  sourcemap: true,
+  sourcemap: false,
   clean: true,
-  outDir: 'dist',
-  external: [
-    "@craftjs/core",
-    'react',
-    'react-dom',
-    'antd',
-    "@ant-design/icons",
-    "@emotion/css",
-    "redux",
-    "@reduxjs/toolkit",
-    "react-redux",
-    "ahooks"
-  ]
-})
+  format: ["esm"],
+  external: ["react", "react-dom", "@craftjs/core", "zustand", "antd", "lodash"],
+  dts: true,
+}))
